@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snake · PlayPop</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;700;800&family=Shrikhand&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/juegos.css">
+</head>
+<body class="tema-snake">
+<header class="topbar"><a class="back" href="../index.html">← Volver al mazo</a><span class="tag">Carta 2 · Snake</span></header>
+<main class="game-wrap">
+  <section class="stage"><h1>Snake</h1><p>Come manzanas y no te muerdas. Flechas / WASD / desliza el dedo.</p>
+    <canvas id="game" width="400" height="400"></canvas></section>
+  <aside class="panel"><h2>Marcador</h2>
+    <div class="score-row"><div class="score"><small>PUNTOS</small><span id="score">0</span></div>
+    <div class="score"><small>RÉCORD</small><span id="best">0</span></div></div>
+    <button class="btn" id="btnStart">Jugar / Reiniciar</button><button class="btn ghost" id="btnPause">Pausa</button>
+    <p class="hint">Cada manzana acelera un poco más.</p></aside>
+</main>
+<script src="../js/fiesta.js"></script>
+<script src="../js/snake.js"></script>
+</body></html>

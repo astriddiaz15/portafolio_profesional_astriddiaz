@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tetris · PlayPop</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;700;800&family=Shrikhand&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/juegos.css">
+</head>
+<body class="tema-tetris">
+<header class="topbar"><a class="back" href="../index.html">← Volver al mazo</a><span class="tag">Carta 1 · Tetris</span></header>
+<main class="game-wrap">
+  <section class="stage"><h1>Tetris</h1><p>Apila bloques rosas y borra líneas. Flechas + Z/X para rotar.</p>
+    <canvas id="game" width="300" height="600"></canvas></section>
+  <aside class="panel"><h2>Marcador</h2>
+    <div class="score-row"><div class="score"><small>PUNTOS</small><span id="score">0</span></div>
+    <div class="score"><small>LÍNEAS</small><span id="lines">0</span></div>
+    <div class="score"><small>NIVEL</small><span id="level">1</span></div></div>
+    <button class="btn" id="btnPause">Pausa</button><button class="btn ghost" id="btnRestart">Reiniciar</button>
+    <p class="hint">← → mover · ↓ bajar · ↑ / Z / X rotar · Espacio caer</p>
+    <p class="hint" id="msg"></p></aside>
+</main>
+<script src="../js/fiesta.js"></script>
+<script src="../js/tetris.js"></script>
+</body></html>

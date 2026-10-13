@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gato · PlayPop</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;700;800&family=Shrikhand&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/juegos.css">
+</head>
+<body class="tema-gato">
+<header class="topbar"><a class="back" href="../index.html">← Volver al mazo</a><span class="tag">Carta 3 · Gato</span></header>
+<main class="game-wrap">
+  <section class="stage"><h1>Gato</h1><p>Elige modo y logra 3 en línea.</p>
+    <div class="mode-row"><button class="btn" id="m2">2 jugadores</button><button class="btn ghost" id="m1">Vs CPU</button></div>
+    <div class="board" id="board"></div>
+    <p id="turn">Turno: X</p></section>
+  <aside class="panel"><h2>Marcador</h2>
+    <div class="score-row"><div class="score"><small>X</small><span id="sx">0</span></div>
+    <div class="score"><small>O</small><span id="so">0</span></div>
+    <div class="score"><small>EMPATES</small><span id="sd">0</span></div></div>
+    <button class="btn ghost" id="btnClear">Reiniciar ronda</button>
+    <p class="hint">La CPU bloquea y busca ganar.</p></aside>
+</main>
+<script src="../js/fiesta.js"></script>
+<script src="../js/gato.js"></script>
+</body></html>

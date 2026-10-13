@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solitario · PlayPop</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;700;800&family=Shrikhand&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/juegos.css">
+</head>
+<body class="tema-solitario">
+<header class="topbar"><a class="back" href="../index.html">← Volver al mazo</a><span class="tag">Carta 5 · Solitario</span></header>
+<main class="game-wrap">
+  <section class="stage"><h1>Solitario</h1><p>Klondike: arma escaleras rojo/negro en el tablero y palos A→K arriba. Toca para seleccionar y mover. Doble toque = mandar a la fundación.</p>
+    <div class="sol-top">
+      <div class="sol-pile" id="stock" title="Mazo"></div>
+      <div class="sol-pile" id="waste" title="Descarte"></div>
+      <div class="sol-pile found" data-found="0"></div>
+      <div class="sol-pile found" data-found="1"></div>
+      <div class="sol-pile found" data-found="2"></div>
+      <div class="sol-pile found" data-found="3"></div>
+    </div>
+    <div class="sol-tab" id="tabs"></div>
+  </section>
+  <aside class="panel"><h2>Marcador</h2>
+    <div class="score-row"><div class="score"><small>MOVIMIENTOS</small><span id="moves">0</span></div>
+    <div class="score"><small>TIEMPO</small><span id="time">0:00</span></div></div>
+    <button class="btn" id="btnNew">Nuevo juego</button>
+    <button class="btn ghost" id="btnAuto">Auto a fundación</button>
+    <p class="hint" id="msg">Solo el Rey (K) puede abrir columna vacía.</p></aside>
+</main>
+<script src="../js/fiesta.js"></script>
+<script src="../js/solitario.js"></script>
+</body></html>
